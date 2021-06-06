@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
+:root {
+    --dark: #03031D;
+    --blurple: #5865F2;
+    --red: #ED4245;
+    --white: #FFFFFF;
+    --pink: #EB459E;
+    --yellow: #FEE75C;
+    --green: #57F287;
+}
+
 body {
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #32334a !important;
+    font-family: 'Manilla Cellos', sans-serif;
+    src: url(../fonts//Manilla\ Cellos.otf);
+    background-color: var(--dark) !important;
+    letter-spacing: 2px;
 }
 
 .navbar-toggler {
-    background-color: #714cdf;
-    color: #FFFFFF;
+    background-color: var(--blurple);
+    color: var(--white);
 }
 
 .navbar-dark .navbar-toggler {
-    background-color: #714cdf;
-    color: #FFFFFF;
+    background-color: var(--blurple);
+    color: var(--white);
 }
 
 .head {
@@ -26,7 +38,7 @@ body {
     width: 300px;
     border-radius: 50%;
     cursor: pointer;
-    border: 5px solid #797979;
+    border: 5px solid var(--green);
 }
 
 .textheader {
@@ -34,13 +46,13 @@ body {
 }
 
 ::selection {
-    color: #FFFFFF;
-    background-color: #ec7344;
+    color: var(--white);
+    background-color: var(--red);
 }
 
 ::-moz-selection {
-    color: #FFFFFF;
-    background-color: #ec7344;
+    color: var(--white);
+    background-color: var(--red);
 }
 
 .buttonsholder {
@@ -54,12 +66,17 @@ body {
 }
 
 .buttons {
+    color: var(--white);
     margin: 7px;
 }
 
+.buttons:hover {
+    opacity: 0.7;
+}
+
 .status_container {
-    border: 3px solid #B8B8B8 !important;
-    border-left: 8px solid #B8B8B8 !important;
+    border: 3px solid var(--green) !important;
+    border-left: 8px solid var(--green) !important;
     border-radius: 5px !important;
     padding: 12px;
 }
@@ -76,5 +93,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #714cdf;
+    background-color: var(--blurple);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blurple {
+    background-color: var(--blurple);
 }
