@@ -1,7 +1,7 @@
 export default function Stats({ data = [] }) {
     return (
         <div className="d-flex align-items-center justify-content-center mt-5">
-            <table class="table table-striped table-bordered" style={{ maxWidth: "70%", width: "70%" }}>
+            <table className="table table-striped table-bordered" style={{ maxWidth: "70%", width: "70%" }}>
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">#</th>
