@@ -14,7 +14,7 @@ export default class Home extends Component {
 
     componentDidMount() {
         if (!this.state.user) {
-            fetch("https://api.github.com/users/snowflake107")
+            fetch("https://api.github.com/users/devandromeda")
                 .then(res => res.json())
                 .then(user => this.setState({ user, error: false }))
                 .catch(e => this.setState({ user: null, error: true }));
@@ -25,9 +25,9 @@ export default class Home extends Component {
         return (
             <div className="b">
                 <div className="head mt-5">
-                    <img src={this.state.user?.avatar_url ?? "https://avatars1.githubusercontent.com/snowflake107"} className="logo" alt="logo" draggable="false" />
+                    <img src={this.state.user?.avatar_url ?? "https://avatars1.githubusercontent.com/devandromeda"} className="logo" alt="logo" draggable="false" />
                 </div>
-                <h1 className="text-center mt-4 textheader">{ this.state.user?.name ?? "Snowflake" }</h1>
+                <h1 className="text-center mt-4 textheader">{ this.state.user?.name ?? "and" }</h1>
                 <p className="text-center text-white">{(!this.state.user && this.state.error) ? "Loading Error!" : this.state.user?.bio ?? "Loading..."}</p>
                 <div className="buttonsholder mt-2">
                     <a href="https://discord.snowflakedev.xyz" className="btn btn-lg buttons red text-white">Discord</a>
